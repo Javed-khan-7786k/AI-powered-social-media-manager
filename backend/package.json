@@ -1,0 +1,56 @@
+{
+  "name": "github-linkedin-ai-platform-backend",
+  "version": "2.0.0",
+  "description": "Production-Ready GitHub to LinkedIn AI Automation Platform Backend",
+  "main": "server.js",
+  "scripts": {
+  "test": "jest --runInBand --forceExit",
+  "test:debug": "jest --runInBand --detectOpenHandles",
+  "test:integration": "node tests/api.test.js",
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+  "jest": {
+    "testEnvironment": "node",
+    "forceExit": true,
+    "testTimeout": 10000
+  },
+  "keywords": [
+    "github-app",
+    "webhook",
+    "linkedin",
+    "oauth2",
+    "ai",
+    "automation",
+    "express"
+  ],
+  "author": "AI Social Media Manager",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "passport": "^0.7.0",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "puppeteer-core": "^25.4.0",
+    "@sparticuz/chromium": "^131.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
+}
